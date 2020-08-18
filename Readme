@@ -7,3 +7,7 @@ Version 2 adds:
 1) Minor bug fixes
 2) Pulling additional data elements, such as battery voltage, directly from the station devices
 3) Support for WeatherFlow's new Tempest Weather System
+
+Please note that an include path statement was added to the S+ module as I have seen compilation issues when the clz
+file is simply placed in the Usrsplus directory.  You will need to change this statement to the location where you 
+place clz files on your computer.
