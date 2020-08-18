@@ -2,3 +2,8 @@ The Crestron module pulls observation data from a Weatherflow smart weather stat
 Data is pulled every 15 minutes.  Outputs from the module include stings (formatted for display) of the data elements,
 Analog values of the data elements (some of them scaled by 10 or 100 so accuracy isn't lost), and digital outputs that
 indicate which elements were successfully extracted from the weather station and which weren't.  
+
+Version 2 adds:
+1) Minor bug fixes
+2) Pulling additional data elements, such as battery voltage, directly from the station devices
+3) Support for WeatherFlow's new Tempest Weather System
