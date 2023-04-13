@@ -14,3 +14,6 @@ place clz files on your computer.
 
 5/6/21 - A new version of WeatherFlowV2 S#.zip has been uploaded that fixes a null exception error.  Please use the
 WeatherFlowV2.clz file included in this zip file.
+
+4/13/23 - New files have been uploaded.  V4 adds support for the WeatherFlow UDP messages.  This, for example. 
+provides for triggers when rain is detected.
