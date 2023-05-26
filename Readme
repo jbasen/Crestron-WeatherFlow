@@ -1,3 +1,14 @@
+IMPORTANT UPDATE - WeatherFlow just changed things with their security that has caused the 
+Crestron-Weatherflow modules to stop working.  To fix the issue Go to the weatherflow tempest 
+web interface:
+
+https://tempestwx.com/station/[your station ID]/
+
+Got to settings. Scroll down and select Data Authorizations. Create 
+a Personal Use Token and use that for the API Key parameter in the modules.
+
+_____________________________________
+
 The Crestron module pulls observation data from a Weatherflow smart weather station using the Weatherflow Rest API
 Data is pulled every 15 minutes.  Outputs from the module include stings (formatted for display) of the data elements,
 Analog values of the data elements (some of them scaled by 10 or 100 so accuracy isn't lost), and digital outputs that
