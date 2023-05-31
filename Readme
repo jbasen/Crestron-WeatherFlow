@@ -1,12 +1,30 @@
-IMPORTANT UPDATE - WeatherFlow just changed things with their security that has caused the 
-Crestron-Weatherflow modules to stop working.  To fix the issue Go to the weatherflow tempest 
-web interface:
+5/30/23 - IMPORTANT UPDATE - WeatherFlow just changed things with their security that has caused the 
+Crestron-WeatherFlow modules to stop working.  To fix the issue, first you will need to download
+the latest version of the modules.  Significant changes have been made to the modules
 
-https://tempestwx.com/station/[your station ID]/
+1) The observations module is the closest to the original WeatherFlow module.  It polls the
+WeatherFlow clould api for updates every 15 minutes.  There are both analog and formatted
+display string outputs.
 
-Got to settings. Scroll down and select Data Authorizations. Create 
-a Personal Use Token and use that for the API Key parameter in the modules.
+2) the Forecast module now includes information to work around the lack of weather forecast data
+being supplied by Crestron.  Again, it uses the WeatherFlow cloud service to obtain data
 
+3) UDP module.  This module displays data that is sent directly from the weather station using 
+UDP messages on the homeowner's local network.  So, this the information from this module is 
+not reliant on the WeatherFlow cloud service and also doesn't require an active Internet connection; 
+making it more resilient to supplying weather information during a bad storm.  
+
+There is information in the module help files on obtaining a Personal Access Token and the ID of your
+WeatherFlow weather station; both of which are required as parameters by the observation and forecast
+modules.
+
+The UDP module only requires the IP address of your WeatherFlow hub.  The hub's IP address should either
+be static or have a DHCP reservation so it doesn't change over time.
+
+These new modules have been tested BUT a hardware issue with my station has kept me from fully testing
+all aspects of the new UDP module.  So, consider them as beta versions for the moment.  Also, the modules
+been coded to work with the Tempest, as well as Sky and Air, WeatherFlow weather stations.  However, I only
+have a Tempest station to work with so testing has been limited to the Tempest.  
 _____________________________________
 
 The Crestron module pulls observation data from a Weatherflow smart weather station using the Weatherflow Rest API
