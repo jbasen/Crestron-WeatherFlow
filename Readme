@@ -1,3 +1,4 @@
+V5.2 - Bug fix to address an issue with JSON parsing
 
 v5.1 - Bug fixes and reducing the polling interval for observation data to 1 minute to match
 the rate at which WeatherFlow updates the observation data.  This change was made based on a
