@@ -1,3 +1,5 @@
+v5.6 - Fixed bug with scaling of Illumiation field in UDP module
+
 V5.5 - Misc Bug Fixes and enhancements
 
 V5.2 - Bug fix to address an issue with JSON parsing
