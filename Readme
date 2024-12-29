@@ -1,3 +1,5 @@
+v5.7 - Bug Fix with observation data in low temperature situations
+
 v5.6 - Fixed bug with scaling of Illumiation field in UDP module
 
 V5.5 - Misc Bug Fixes and enhancements
