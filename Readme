@@ -1,3 +1,6 @@
+v5.8 - Fix exceptions due to lightning energy overflowing a short and when station returns
+no observation data
+
 v5.7 - Bug Fix with observation data in low temperature situations
 
 v5.6 - Fixed bug with scaling of Illumiation field in UDP module
